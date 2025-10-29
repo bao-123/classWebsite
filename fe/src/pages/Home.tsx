@@ -14,6 +14,14 @@ function Home() {
                     </div>
                 </div>
 
+                <div className={styles["features"]}>
+                    <div id={styles["set-football-match"]}>
+                        <div className={styles["feature-title"]}>
+                            <h2>Lên kèo đá banh</h2>
+                            <p className={styles["feature-desc"]}>Lên kèo mọi lúc - Thi đấu mọi nơi</p>
+                        </div>
+                    </div>                    
+                </div>
             </div>
         </>
     )
