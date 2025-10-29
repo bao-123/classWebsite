@@ -15,6 +15,7 @@ function Home() {
                 </div>
 
                 <div className={styles["features"]}>
+                    <h2>Tính năng</h2>
                     <div id={styles["set-football-match"]}>
                         <div className={styles["feature-title"]}>
                             <h2>Lên kèo đá banh</h2>
