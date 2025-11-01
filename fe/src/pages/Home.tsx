@@ -1,4 +1,5 @@
 import styles from "../styles/home.module.css";
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
@@ -20,6 +21,7 @@ function Home() {
                         <div className={styles["feature-title"]}>
                             <h2>Lên kèo đá banh</h2>
                             <p className={styles["feature-desc"]}>Lên kèo mọi lúc - Thi đấu mọi nơi</p>
+                            <Link to="/set-match" className={styles["feature-link"]}>Click vào link này để lên kèo ngay</Link>
                         </div>
                     </div>                    
                 </div>
