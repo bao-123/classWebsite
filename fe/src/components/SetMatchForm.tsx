@@ -1,5 +1,5 @@
 import styles from "../styles/form.module.css";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function SetMatchForm() {
   const [matchInfo, setMatchInfo] = useState({
@@ -10,13 +10,14 @@ function SetMatchForm() {
     location: "",
     registerName: "",
   });
-
-  useEffect(() => {
+  
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
     console.log(matchInfo);
-  }, [matchInfo]);
-    
+  }
+
   return (
-    <form id={styles["main-form"]}>
+    <form id={styles["main-form"]} onSubmit={handleSubmit}>
       <input
         type="text"
         id={styles["registerName"]}
@@ -101,6 +102,7 @@ function SetMatchForm() {
           </label>
         </div>
       </div>
+      <button type="submit">Lên kèo</button>
     </form>
   );
 }

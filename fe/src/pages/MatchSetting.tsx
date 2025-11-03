@@ -15,7 +15,7 @@ function MatchSetting()
         <SetMatchForm />
 
         <footer>
-            chan trang
+            
         </footer>
         </>
     )
