@@ -41,7 +41,7 @@ function SetMatchForm() {
       <input
         type="text"
         id={styles["date"]}
-        placeholder="Ngày nào đá?"
+        placeholder="Khi nào đá?"
         value={matchInfo.date || ""}
         onChange={(e) => setMatchInfo({ ...matchInfo, date: e.target.value })}
       />

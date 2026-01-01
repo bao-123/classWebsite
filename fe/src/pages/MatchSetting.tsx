@@ -13,10 +13,6 @@ function MatchSetting()
         </div>
 
         <SetMatchForm />
-
-        <footer>
-            
-        </footer>
         </>
     )
 }

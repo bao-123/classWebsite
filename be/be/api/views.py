@@ -1,7 +1,9 @@
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
+from rest_framework import generics
+from api.serializers import MatchRequestSerializer
+from api.models import MatchRequest
 
-# Create your views here.
-@api_view(['GET'])
-def hello(request):
-    return Response({"message": "Hello, guys!"})
+class MatchRequestListCreateView(generics.ListCreateAPIView):
+    queryset = MatchRequest.objects.all()
+    serializer_class = MatchRequestSerializer
+
+

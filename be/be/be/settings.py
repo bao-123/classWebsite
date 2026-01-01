@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)hpmtd$jg-h2x)6b9_e=(c-%45&@dqy%^&jldhi-#18k)xf357
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".vercel.app", "127.0.0.1"]
 
 
 # Application definition
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     "rest_framework",
     "corsheaders",
+    "api",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -106,7 +107,7 @@ if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True
 else:
     CORS_ALLOWED_ORIGINS = [
-        "https://your-production-domain.com", #*Replace with your production domain
+        "https://9a1-dep-trai.duckdns.org/", #*Replace with your production domain
     ]
 
 # Internationalization
